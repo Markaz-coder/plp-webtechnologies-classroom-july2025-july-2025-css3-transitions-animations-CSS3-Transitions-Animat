@@ -1,0 +1,50 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Part 1: Button hover effect with transition */
+.hover-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Continuous animation using keyframes */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    margin: 20px auto;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); background: blue; }
+    50% { transform: scale(1.2); background: lightblue; }
+}
+
+/* Part 3: Box animation triggered by JS */
+#js-box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 20px auto;
+    transition: transform 1s ease, background 1s ease;
+}
+
+#js-box.animate {
+    transform: rotate(360deg) scale(1.5);
+    background: orange;
+}
